@@ -82,14 +82,14 @@ button,input,select,textarea{font:inherit}
 
 /* hero */
 .hero{background:radial-gradient(120% 90% at 85% 10%,var(--hero-2),var(--hero) 60%);color:var(--hero-ink);padding-block:clamp(36px,5vw,64px) clamp(48px,6vw,80px);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start} .hero .mapcard{margin-top:clamp(0px,3vw,44px)!important}
 .hero .eyebrow{color:var(--yellow)}
 .hero h1{font-size:clamp(44px,6.6vw,92px);font-weight:800;margin-top:18px;line-height:.98}
 .hero h1 em{font-style:normal;color:var(--yellow)}
 .hero .lede{font-size:clamp(17px,1.7vw,20px);color:var(--hero-muted);max-width:44ch;margin-top:22px}
 .hero .lede b{color:var(--hero-ink);font-weight:600}
-.stones{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
-.stone{display:grid;grid-template-rows:auto 1fr;width:124px;border-radius:26px 26px 6px 6px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.28);background:#FBFBF7;color:#1F2A2E;text-align:center}
+.stones{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;align-items:flex-start}
+.stone{display:block;flex:0 0 auto;align-self:flex-start;height:auto;width:124px;border-radius:26px 26px 6px 6px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.28);background:#FBFBF7;color:#1F2A2E;text-align:center}
 .stone .top{background:var(--yellow);font-family:var(--f-mono);font-weight:500;font-size:13px;padding:10px 6px 7px;letter-spacing:.04em}
 .stone .body{padding:8px 6px 12px;display:grid;gap:0}
 .stone b{font-family:var(--f-display);font-size:30px;font-weight:800;line-height:1}
@@ -367,7 +367,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
       <p class="lede"><b>A once-in-a-decade opportunity.</b> A land investment with high capital appreciation and rental income potential, in a gated 20-acre layout inside the Narasapura industrial belt.</p>
       <div class="stones" aria-label="Straight-line distances from the site">
         <div class="stone"><div class="top">TATA · iPHONE</div><div class="body"><b>1.2 km</b><span>Electronics plant</span></div></div>
-        <div class="stone"><div class="top">EXEDY · BANDO</div><div class="body"><b>600 m</b><span>Industrial Road</span></div></div>
+        <div class="stone"><div class="top">HONDA</div><div class="body"><b>2.5 km</b><span>Two-wheeler plant</span></div></div>
         <div class="stone"><div class="top">NH 75</div><div class="body"><b>1.6 km</b><span>National Highway</span></div></div>
       </div>
       <div class="pricebar">
@@ -380,7 +380,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
       </div>
     </div>
     <figure class="mapcard" style="margin:0">
-      <svg viewBox="0 0 560 470" role="img" aria-label="Map drawn from real coordinates. The site sits at the centre. Exedy and Bando are 600 metres east on Narasapura Industrial Road. The Tata Electronics iPhone plant is 1.2 kilometres to the east-south-east. National Highway 75 runs east to west about 1.6 kilometres to the north. Scania, Aisin and Mahindra Aerospace are 1.3 to 1.5 kilometres south, and Honda is 2.5 kilometres south.">
+      <svg viewBox="0 0 560 470" role="img" aria-label="Map drawn from real coordinates. The site sits at the centre. Narasapura Industrial Road runs 600 metres to the east. The Tata Electronics iPhone plant is 1.2 kilometres to the east-south-east. National Highway 75 runs east to west about 1.6 kilometres to the north. Scania, Aisin and Mahindra Aerospace are 1.3 to 1.5 kilometres south, and Honda is 2.5 kilometres south.">
         <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(244,241,234,.06)" stroke-width="1"/></pattern></defs>
         <rect width="560" height="470" rx="18" fill="rgba(0,0,0,.18)"/>
         <rect width="560" height="470" rx="18" fill="url(#g)"/>
@@ -405,9 +405,8 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
         <rect x="140" y="336" width="46" height="20" rx="10" fill="#161E21" stroke="rgba(244,241,234,.5)"/>
         <text x="163" y="350" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#F4F1EA">2 km</text>
         <!-- Exedy, Bando -->
-        <g fill="#F4F1EA"><rect x="338" y="211" width="11" height="11" rx="2"/><rect x="340" y="225" width="11" height="11" rx="2"/></g>
-        <text x="358" y="221" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F4F1EA">Exedy · Bando</text>
-        <text x="358" y="234" font-family="JetBrains Mono, monospace" font-size="10" fill="#D4A24C">0.6 km</text>
+        <g fill="rgba(244,241,234,.78)"><rect x="339" y="212" width="8" height="8" rx="1.5"/><rect x="341" y="225" width="8" height="8" rx="1.5"/></g>
+        <text x="354" y="224" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Exedy · Bando</text>
         <!-- Tata Electronics -->
         <path d="M280 235 L360 259" stroke="#D4A24C" stroke-width="1.5" stroke-dasharray="4 5"/>
         <g transform="translate(360 244)"><rect width="38" height="30" rx="4" fill="#F4F1EA"/><path d="M5 24V13l7 4v-4l7 4v-4l7 4V8h7v16z" fill="#1F2A2E"/></g>
@@ -434,10 +433,10 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
         <text x="218" y="289" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="11" font-style="italic" fill="rgba(244,241,234,.7)">Karadabande Hosahalli</text>
         <!-- site -->
         <path d="M262 226 L276 220 L281 229 L302 227 L303 240 L283 243 L281 235 L266 240 Z" fill="#D4A24C" stroke="#1F2A2E" stroke-width="1.2"/>
-        <path d="M262 232 L196 224" stroke="#D4A24C" stroke-width="1"/>
-        <rect x="76" y="202" width="120" height="42" rx="8" fill="#161E21" stroke="#D4A24C"/>
-        <text x="136" y="220" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4A24C">The Ridge</text>
-        <text x="136" y="236" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#F4F1EA">20 acres · 300 plots</text>
+        <path d="M262 232 L202 224" stroke="#D4A24C" stroke-width="1"/>
+        <rect x="64" y="202" width="138" height="42" rx="8" fill="#161E21" stroke="#D4A24C"/>
+        <text x="133" y="220" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4A24C">The Ridge</text>
+        <text x="133" y="236" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#F4F1EA">20 acres · 300 plots</text>
         <text x="540" y="28" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(244,241,234,.7)">N ↑</text>
         <text x="540" y="454" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10.5" fill="rgba(244,241,234,.55)">NARASAPURA INDUSTRIAL AREA</text>
       </svg>
@@ -465,7 +464,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
       <h2>Land beside the jobs keeps its value.</h2>
     </div>
     <div class="why">
-      <article><p class="n">1.2 km</p><h3>From the iPhone plant</h3><p>Tata Electronics is 1.2 km away, and Exedy and Bando are 600 m down Narasapura Industrial Road. Staff can reach work in minutes.</p></article>
+      <article><p class="n">1.2 km</p><h3>From the iPhone plant</h3><p>Tata Electronics is 1.2 km away, with Scania, Mahindra Aerospace and Honda all within 2.5 km. Staff can reach work in minutes.</p></article>
       <article><p class="n">₹1.12 L</p><h3>Monthly rental potential</h3><p>An illustrative 30 × 40 plot with 16 workforce rooms at ₹7,000 a room, in a belt where factory staff need housing close to work.</p></article>
       <article><p class="n">Day 1</p><h3>Sale deed on RERA</h3><p>DTCP layout approval, RERA registration, and the sale deed registered in your name as soon as RERA comes through.</p></article>
     </div>
@@ -536,7 +535,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
     <div class="loc">
       <div>
         <div class="dist d4">
-          <div><b>0.6 km</b><span>Exedy and Bando</span></div>
+          <div><b>0.6 km</b><span>Narasapura Industrial Road</span></div>
           <div><b>1.2 km</b><span>Tata Electronics iPhone plant</span></div>
           <div><b>1.3 km</b><span>Scania</span></div>
           <div><b>1.4 km</b><span>Mahindra Aerospace</span></div>
@@ -748,7 +747,7 @@ const press=(btns,on)=>btns.forEach(b=>b.setAttribute('aria-pressed',b===on?'tru
 /* ---------- nearby places ---------- */
 (function(){
   const D={
-    co:['Industry','Companies',[['Exedy Clutch India','Clutch plant',0.6],['Bando India','Power transmission belts',0.6],['Tata Electronics','iPhone plant',1.2],['Scania','Trucks and buses',1.3],['Mahindra Aerostructures','Aerospace',1.4],['Honda Motorcycle and Scooter India','Two-wheeler plant',2.5]]],
+    co:['Industry','Companies',[['Tata Electronics','iPhone plant',1.2],['Scania','Trucks and buses',1.3],['Mahindra Aerostructures','Aerospace',1.4],['Honda Motorcycle and Scooter India','Two-wheeler plant',2.5],['Exedy Clutch India','Clutch plant',0.6],['Bando India','Power transmission belts',0.6]]],
     ho:['Healthcare','Hospitals',[['Sri Anand Hospital','Narasapura, on NH-75',1.5],['Vamshodaya Hospital','Kolar',16],['MVJ Hospital','NH-75, Hoskote side',19],['R L Jalappa Hospital and Research Centre','Tamaka, Kolar',21],['RL Jalappa Narayana Heart Centre','Tamaka, Kolar',21],['Siliconcity Hospitals','Hoskote',23]]],
     st:['Hospitality','Hotels and resorts',[['Hotel Raj Comfort','Narasapura Industrial Road',1.0],['KR Inn Narasapura','Narasapura Industrial Road',1.0],['The Elite Narasapura','A member of Radisson Individuals',1.5],['Golden Amoon Resort and Spa','Bengaluru–Kolar highway',3.7],['The Jungle Den Resorts','Bettadahosahalli',11],['GK Hill View Resort','Muthukadahalli',22]]],
     ed:['Institutions','Education',[['SRSI PU and First Grade College','Bellur',2.0],['Karnataka Public School','Narasapura',3.2],['Valley Public School','Kurki',3.5],['KVN Group of Institutions','Malur–Narasapura road',8.3],['MVJ Medical College','NH-75, Hoskote side',19],['Sri Devaraj Urs Academy of Higher Education','Tamaka, Kolar',21]]]
