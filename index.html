@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ridge.navilugroup.com/">
 <link rel="canonical" href="https://ridge.navilugroup.com/">
-<meta name="theme-color" content="#062A22">
+<meta name="theme-color" content="#1F2A2E">
 <link rel="icon" type="image/svg+xml" href="brand-ridge-icon.svg">
 <style>html{color-scheme:light} body{margin:0;font:14px system-ui,sans-serif} img{max-width:100%} [hidden]{display:none!important}
 .gmap{margin-top:16px;border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:16/10;background:var(--surface)} .gmap iframe{width:100%;height:100%;border:0;display:block}</style>
@@ -19,9 +19,9 @@
 <style>
 /* Layout: highway vernacular. Brand green ground, milestone yellow as the one signal colour, a 1 km radius map as the hero, then working tools (plot plan, rent and return calculators) on a pale sage page. */
 :root{
-  --bg:#F2F5F0; --surface:#FFFFFF; --ink:#0B1F19; --muted:#51625B; --line:#D3DCD5;
-  --brand:#083C30; --brand-2:#0F5743; --accent-text:#0F5743; --yellow:#F2B824; --yellow-text:#7A5600;
-  --hero:#083C30; --hero-2:#0A4A3B; --hero-ink:#F2F5F0; --hero-muted:#A9C4B9; --hero-line:rgba(242,245,240,.16);
+  --bg:#F4F1EA; --surface:#FFFFFF; --ink:#1F2A2E; --muted:#566062; --line:#DDD7CA;
+  --brand:#1F2A2E; --brand-2:#2F5D50; --accent-text:#2F5D50; --yellow:#D4A24C; --yellow-text:#75551A;
+  --hero:#1F2A2E; --hero-2:#2B393E; --hero-ink:#F4F1EA; --hero-muted:#B1BBBB; --hero-line:rgba(244,241,234,.16);
   --tile:#FFFFFF; --plot:#F6F1DC; --plot-deep:#EBD38C; --plot-odd:#EDBF9B; --plot-line:#8E9A8F; --road:#C5CCC6; --util:#E1E6E1; --open:#D9EBCB; --park:#A9D3A2; --amen:#E7B3C2; --water:#74ABD8; --tree:#4E9A5C; --sand:#F3E4B4; --walk:#F4F2EA; --cobble:#CFC6B4; --cobble-line:#9A907C; --stone:#E6D9BC;
   --f-display:'Bricolage Grotesque','Trebuchet MS',Arial,sans-serif;
   --f-body:'Instrument Sans','Segoe UI',Arial,sans-serif;
@@ -29,13 +29,13 @@
   --wrap:1200px;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --bg:#07130F; --surface:#0E1E19; --ink:#E9EFEA; --muted:#9DB0A7; --line:#22352E;
-  --brand:#17624C; --brand-2:#1F7A60; --accent-text:#6FC2A4; --yellow-text:#F2B824;
-  --hero:#062A22; --hero-2:#083C30; --tile:#F2F5F0; --plot:#33473F; --plot-deep:#6B5A22; --plot-odd:#6A4630; --plot-line:#0B1A16; --road:#1A2A25; --util:#22352E; --open:#1F3D2B; --park:#2C6140; --amen:#6A3A4B; --water:#2F6FA3; --tree:#62B078; --sand:#6B5F36; --walk:#5B6B64; --cobble:#56594F; --cobble-line:#2C2F2A; --stone:#8A7B58; color-scheme:dark }}
+  --bg:#111719; --surface:#1A2326; --ink:#ECE8DF; --muted:#A4AEAD; --line:#2D393D;
+  --brand:#2F5D50; --brand-2:#3B7565; --accent-text:#86C5AF; --yellow-text:#D4A24C;
+  --hero:#161E21; --hero-2:#1F2A2E; --tile:#F4F1EA; --plot:#33473F; --plot-deep:#6B5A22; --plot-odd:#6A4630; --plot-line:#0B1A16; --road:#1A2A25; --util:#22352E; --open:#1F3D2B; --park:#2C6140; --amen:#6A3A4B; --water:#2F6FA3; --tree:#62B078; --sand:#6B5F36; --walk:#5B6B64; --cobble:#56594F; --cobble-line:#2C2F2A; --stone:#8A7B58; color-scheme:dark }}
 :root[data-theme="dark"]{
-  --bg:#07130F; --surface:#0E1E19; --ink:#E9EFEA; --muted:#9DB0A7; --line:#22352E;
-  --brand:#17624C; --brand-2:#1F7A60; --accent-text:#6FC2A4; --yellow-text:#F2B824;
-  --hero:#062A22; --hero-2:#083C30; --tile:#F2F5F0; --plot:#33473F; --plot-deep:#6B5A22; --plot-odd:#6A4630; --plot-line:#0B1A16; --road:#1A2A25; --util:#22352E; --open:#1F3D2B; --park:#2C6140; --amen:#6A3A4B; --water:#2F6FA3; --tree:#62B078; --sand:#6B5F36; --walk:#5B6B64; --cobble:#56594F; --cobble-line:#2C2F2A; --stone:#8A7B58; color-scheme:dark }
+  --bg:#111719; --surface:#1A2326; --ink:#ECE8DF; --muted:#A4AEAD; --line:#2D393D;
+  --brand:#2F5D50; --brand-2:#3B7565; --accent-text:#86C5AF; --yellow-text:#D4A24C;
+  --hero:#161E21; --hero-2:#1F2A2E; --tile:#F4F1EA; --plot:#33473F; --plot-deep:#6B5A22; --plot-odd:#6A4630; --plot-line:#0B1A16; --road:#1A2A25; --util:#22352E; --open:#1F3D2B; --park:#2C6140; --amen:#6A3A4B; --water:#2F6FA3; --tree:#62B078; --sand:#6B5F36; --walk:#5B6B64; --cobble:#56594F; --cobble-line:#2C2F2A; --stone:#8A7B58; color-scheme:dark }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
@@ -57,7 +57,7 @@ button,input,select,textarea{font:inherit}
 .plan-disc{font-size:13.5px;color:var(--ink);margin-top:12px;padding:10px 14px;border-left:3px solid var(--yellow);background:var(--bg);border-radius:0 8px 8px 0}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:13px 24px;border-radius:10px;border:1px solid transparent;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
 .btn:active{transform:translateY(1px)}
-.btn-y{background:var(--yellow);color:#14221F}.btn-y:hover{background:#FFCB45}
+.btn-y{background:var(--yellow);color:#1F2A2E}.btn-y:hover{background:#E2B768}
 .btn-o{border-color:var(--hero-line);color:var(--hero-ink);background:transparent}.btn-o:hover{border-color:var(--hero-ink)}
 .btn-g{background:var(--brand);color:#fff}.btn-g:hover{background:var(--brand-2)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} }
@@ -66,10 +66,16 @@ button,input,select,textarea{font:inherit}
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--hero);color:var(--hero-ink);border-bottom:1px solid var(--hero-line)}
 .nav .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
 .nav .logo img{height:50px;width:auto;display:block}
-@media (max-width:560px){ .nav .logo img{height:40px} }
+@media (max-width:560px){ .nav .logo img{height:40px} .nav.scrolled .logo img{height:34px} }
 .nav .rera{font-family:var(--f-mono);font-size:11px;color:var(--hero-muted);border-left:1px solid var(--hero-line);padding-left:16px;line-height:1.3}
 .nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0;font-size:14px}
-.nav ul a{text-decoration:none;color:var(--hero-muted)}.nav ul a:hover{color:var(--hero-ink)}
+.nav ul a{text-decoration:none;color:var(--hero-muted);position:relative;padding-block:8px;transition:color .2s}.nav ul a:hover,.nav ul a.active{color:var(--hero-ink)}
+.nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .28s ease}
+.nav ul a:hover::after,.nav ul a.active::after{transform:scaleX(1)}
+.nav{transition:box-shadow .28s ease,background-color .28s ease} .nav .wrap{transition:padding .28s ease} .nav .logo img{transition:height .28s ease}
+.nav.scrolled{box-shadow:0 10px 28px rgba(0,0,0,.30);background:color-mix(in srgb,var(--hero) 86%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.nav.scrolled .wrap{padding-block:6px} .nav.scrolled .logo img{height:38px}
+.nav-prog{position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--yellow);transform:scaleX(0);transform-origin:left;pointer-events:none}
 .nav .btn{min-height:40px;padding:8px 16px;font-size:14px}
 @media (max-width:1020px){ .nav ul{display:none} .nav .btn{margin-left:auto} }
 @media (max-width:560px){ .nav .rera{display:none} }
@@ -83,14 +89,14 @@ button,input,select,textarea{font:inherit}
 .hero .lede{font-size:clamp(17px,1.7vw,20px);color:var(--hero-muted);max-width:44ch;margin-top:22px}
 .hero .lede b{color:var(--hero-ink);font-weight:600}
 .stones{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
-.stone{display:grid;grid-template-rows:auto 1fr;width:124px;border-radius:26px 26px 6px 6px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.28);background:#FBFBF7;color:#14221F;text-align:center}
+.stone{display:grid;grid-template-rows:auto 1fr;width:124px;border-radius:26px 26px 6px 6px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.28);background:#FBFBF7;color:#1F2A2E;text-align:center}
 .stone .top{background:var(--yellow);font-family:var(--f-mono);font-weight:500;font-size:13px;padding:10px 6px 7px;letter-spacing:.04em}
 .stone .body{padding:8px 6px 12px;display:grid;gap:0}
 .stone b{font-family:var(--f-display);font-size:30px;font-weight:800;line-height:1}
 .stone span{font-size:12px;line-height:1.25}
 .pricebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:30px;border:1px solid var(--hero-line);border-radius:14px;overflow:hidden;max-width:520px}
 .pricebar div{padding:16px 18px;display:grid;gap:2px}
-.pricebar div+div{border-left:1px solid var(--hero-line);background:rgba(242,184,36,.08)}
+.pricebar div+div{border-left:1px solid var(--hero-line);background:rgba(212,162,76,.08)}
 .pricebar small{font-size:12px;color:var(--hero-muted)}
 .pricebar b{font-family:var(--f-display);font-size:30px;font-weight:700}
 .pricebar div+div b{color:var(--yellow)}
@@ -136,7 +142,7 @@ button,input,select,textarea{font:inherit}
 .plot.odd{fill:var(--plot-odd)}
 .plot.dim{opacity:.22}
 .plot.sel{fill:var(--yellow);stroke:var(--ink);stroke-width:1.6}
-.plot.sel+.pl-n{fill:#14221F;font-weight:500}
+.plot.sel+.pl-n{fill:#1F2A2E;font-weight:500}
 .pl-road{fill:var(--road);stroke:var(--plot-line);stroke-width:1} .pl-util{fill:var(--util)} .pl-open{fill:var(--open)} .pl-park{fill:var(--park)} .pl-amen{fill:var(--amen)} .pl-water{fill:var(--water)}
 .pl-walk{fill:var(--walk);stroke:var(--walk);stroke-width:3.8;stroke-linejoin:round} .pl-gate-road{fill:var(--road)} .pl-tree{fill:var(--tree)} .pl-shrub{fill:var(--tree);opacity:.6} .pl-play{fill:var(--sand);stroke:var(--plot-line);stroke-width:.4} .pl-eq{fill:none;stroke:var(--yellow-text);stroke-width:.9;stroke-linecap:round}
 .pl-pillar{fill:var(--ink)} .pl-cob{fill:url(#cob)} .pl-cobs{fill:var(--cobble);stroke:var(--cobble-line);stroke-width:.35} .pl-arch{fill:var(--stone);stroke:var(--ink);stroke-width:.8} .pl-cabin{fill:var(--surface);stroke:var(--ink);stroke-width:.8} .pl-roof{fill:var(--green);stroke:var(--ink);stroke-width:.6} .pl-win{fill:var(--water);opacity:.55;stroke:var(--ink);stroke-width:.5} .pl-ins{fill:var(--surface);stroke:var(--line);stroke-width:1} .pl-lead{stroke:var(--muted);stroke-width:.6;fill:none} .pl-cap{font-family:var(--f-mono);font-size:8px;fill:var(--muted)} .pl-ttl{font-family:var(--f-mono);font-size:9.5px;font-weight:600;fill:var(--ink);letter-spacing:.06em} .pl-sign{font-family:var(--f-display,inherit);font-size:9px;font-weight:700;fill:var(--ink);letter-spacing:.22em} .pl-tag{fill:var(--ink)} .pl-tagt{font-family:var(--f-mono);font-size:8px;font-weight:700;fill:var(--surface)} .pl-gatebar{stroke:var(--yellow);stroke-width:3} .pl-gt{font-size:11px;font-weight:500}
@@ -236,7 +242,7 @@ input[type=range]{width:100%;accent-color:var(--brand-2);height:28px}
 .terms b{font-family:var(--f-display);font-size:clamp(26px,3vw,36px);font-weight:700;color:var(--yellow)}
 .terms span{font-size:13px;color:var(--hero-muted)}
 .slots{display:grid;grid-template-columns:repeat(25,minmax(0,1fr));gap:4px;margin-top:22px;max-width:640px}
-.slots i{aspect-ratio:3/4;border-radius:3px;border:1px solid var(--yellow);background:rgba(242,184,36,.10)}
+.slots i{aspect-ratio:3/4;border-radius:3px;border:1px solid var(--yellow);background:rgba(212,162,76,.10)}
 .slots i.on{background:var(--yellow)}
 .slotline{margin-top:12px;font-size:15px;color:var(--hero-muted)}
 .slotline b{color:var(--yellow)}
@@ -250,7 +256,7 @@ input[type=range]{width:100%;accent-color:var(--brand-2);height:28px}
 .icalc .ctl output{color:var(--yellow)}
 .icalc input[type=range]{accent-color:var(--yellow)}
 .icalc .chip{background:transparent;color:var(--hero-ink);border-color:var(--hero-line)}
-.icalc .chip[aria-pressed="true"]{background:var(--yellow);border-color:var(--yellow);color:#14221F}
+.icalc .chip[aria-pressed="true"]{background:var(--yellow);border-color:var(--yellow);color:#1F2A2E}
 .res{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .res div{border-top:2px solid var(--yellow);padding-top:10px;display:grid;gap:2px}
 .res b{font-family:var(--f-display);font-size:clamp(24px,3vw,34px);font-weight:700;font-variant-numeric:tabular-nums}
@@ -307,16 +313,16 @@ fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
 footer{background:var(--hero);color:var(--hero-muted);font-size:13px;padding-block:40px calc(96px + env(safe-area-inset-bottom,0px))}
 footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{max-width:900px}
 
-.side{position:fixed;right:env(safe-area-inset-right,0px);top:42%;z-index:25;writing-mode:vertical-rl;background:var(--yellow);color:#14221F;font-weight:700;font-size:14px;padding:16px 9px;border-radius:10px 0 0 10px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.side{position:fixed;right:env(safe-area-inset-right,0px);top:42%;z-index:25;writing-mode:vertical-rl;background:var(--yellow);color:#1F2A2E;font-weight:700;font-size:14px;padding:16px 9px;border-radius:10px 0 0 10px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.2)}
 .float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;display:grid;gap:10px}
 .float a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.28)}
-.float .wa{background:#1E8E4E}.float .ph{background:#0A4A3B;border:1px solid var(--hero-line)}
+.float .wa{background:#1E8E4E}.float .ph{background:#2B393E;border:1px solid var(--hero-line)}
 .bar{display:none}
 @media (max-width:700px){
   .side,.float{display:none}
   .bar{display:grid;grid-template-columns:1fr 1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--hero);border-top:1px solid var(--hero-line);padding:8px max(10px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px));gap:8px}
   .bar a{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;color:var(--hero-ink);border:1px solid var(--hero-line)}
-  .bar a.y{background:var(--yellow);color:#14221F;border-color:var(--yellow)}
+  .bar a.y{background:var(--yellow);color:#1F2A2E;border-color:var(--yellow)}
 }
 /* compact rental section */
 .rent-s{padding-block:clamp(36px,5vw,56px)}
@@ -350,6 +356,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
     </ul>
     <a class="btn btn-y" href="#enquire">Enquire now</a>
   </div>
+  <span class="nav-prog" id="nav-prog" aria-hidden="true"></span>
 </nav>
 
 <header class="hero" id="top">
@@ -374,67 +381,65 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
     </div>
     <figure class="mapcard" style="margin:0">
       <svg viewBox="0 0 560 470" role="img" aria-label="Map drawn from real coordinates. The site sits at the centre. Exedy and Bando are 600 metres east on Narasapura Industrial Road. The Tata Electronics iPhone plant is 1.2 kilometres to the east-south-east. National Highway 75 runs east to west about 1.6 kilometres to the north. Scania, Aisin and Mahindra Aerospace are 1.3 to 1.5 kilometres south, and Honda is 2.5 kilometres south.">
-        <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(242,245,240,.06)" stroke-width="1"/></pattern></defs>
+        <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(244,241,234,.06)" stroke-width="1"/></pattern></defs>
         <rect width="560" height="470" rx="18" fill="rgba(0,0,0,.18)"/>
         <rect width="560" height="470" rx="18" fill="url(#g)"/>
         <!-- distance rings: 80 px = 1 km -->
-        <circle cx="280" cy="235" r="160" fill="none" stroke="rgba(242,245,240,.28)" stroke-dasharray="3 7"/>
-        <circle cx="280" cy="235" r="80" fill="rgba(242,184,36,.07)" stroke="#F2B824" stroke-width="1.5"/>
-        <circle cx="280" cy="235" r="80" fill="none" stroke="#F2B824" stroke-width="2" class="pulse"/>
-        <!-- other plants in the estate -->
-        <g fill="rgba(242,245,240,.10)" stroke="rgba(242,245,240,.22)">
-          <rect x="372" y="300" width="34" height="20" rx="3"/><rect x="418" y="286" width="26" height="26" rx="3"/><rect x="452" y="318" width="40" height="22" rx="3"/>
-          <rect x="386" y="388" width="38" height="22" rx="3"/><rect x="438" y="366" width="28" height="30" rx="3"/><rect x="452" y="214" width="36" height="22" rx="3"/><rect x="476" y="256" width="30" height="24" rx="3"/>
-          <rect x="300" y="400" width="30" height="20" rx="3"/><rect x="350" y="426" width="36" height="20" rx="3"/>
-        </g>
+        <circle cx="280" cy="235" r="160" fill="none" stroke="rgba(244,241,234,.28)" stroke-dasharray="3 7"/>
+        <circle cx="280" cy="235" r="80" fill="rgba(212,162,76,.07)" stroke="#D4A24C" stroke-width="1.5"/>
+        <circle cx="280" cy="235" r="80" fill="none" stroke="#D4A24C" stroke-width="2" class="pulse"/>
         <!-- NH 75 -->
-        <path d="M-10 96 L210 100 L262 107 L400 108 L570 102" fill="none" stroke="#14221F" stroke-width="20"/>
-        <path d="M-10 96 L210 100 L262 107 L400 108 L570 102" fill="none" stroke="rgba(242,245,240,.9)" stroke-width="2" stroke-dasharray="16 12" class="traffic"/>
-        <rect x="22" y="62" width="176" height="22" rx="5" fill="#0F5743" stroke="#F2F5F0" stroke-width="1.5"/>
-        <text x="110" y="77" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#F2F5F0">NH 75 · BENGALURU ⟷ KOLAR</text>
-        <circle cx="460" cy="38" r="4" fill="rgba(242,245,240,.7)"/>
-        <text x="470" y="42" font-family="Instrument Sans, Arial, sans-serif" font-size="12" fill="rgba(242,245,240,.75)">Narasapura</text>
+        <path d="M-10 96 L210 100 L262 107 L400 108 L570 102" fill="none" stroke="#0E1416" stroke-width="20"/>
+        <path d="M-10 96 L210 100 L262 107 L400 108 L570 102" fill="none" stroke="rgba(244,241,234,.9)" stroke-width="2" stroke-dasharray="16 12" class="traffic"/>
+        <rect x="22" y="62" width="176" height="22" rx="5" fill="#2F5D50" stroke="#F4F1EA" stroke-width="1.5"/>
+        <text x="110" y="77" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#F4F1EA">NH 75 · BENGALURU ⟷ KOLAR</text>
+        <circle cx="460" cy="38" r="4" fill="rgba(244,241,234,.7)"/>
+        <text x="470" y="42" font-family="Instrument Sans, Arial, sans-serif" font-size="12" fill="rgba(244,241,234,.75)">Narasapura</text>
         <!-- Narasapura Industrial Road -->
-        <path d="M329 108 L329 150 L330 223 L322 290 L312 336 L296 356 L262 410 L236 480" fill="none" stroke="#14221F" stroke-width="10" stroke-linejoin="round"/>
-        <path d="M329 108 L329 150 L330 223 L322 290 L312 336 L296 356 L262 410 L236 480" fill="none" stroke="rgba(242,245,240,.7)" stroke-width="1.2" stroke-dasharray="8 8" class="traffic"/>
-        <text x="342" y="140" font-family="JetBrains Mono, monospace" font-size="9.5" fill="rgba(242,245,240,.7)">INDUSTRIAL RD</text>
+        <path d="M329 108 L329 150 L330 223 L322 290 L312 336 L296 356 L262 410 L236 480" fill="none" stroke="#0E1416" stroke-width="10" stroke-linejoin="round"/>
+        <path d="M329 108 L329 150 L330 223 L322 290 L312 336 L296 356 L262 410 L236 480" fill="none" stroke="rgba(244,241,234,.7)" stroke-width="1.2" stroke-dasharray="8 8" class="traffic"/>
+        <text x="342" y="140" font-family="JetBrains Mono, monospace" font-size="9.5" fill="rgba(244,241,234,.7)">INDUSTRIAL RD</text>
         <!-- ring labels -->
-        <rect x="198" y="167" width="46" height="20" rx="10" fill="#F2B824"/>
-        <text x="221" y="181" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" fill="#14221F">1 km</text>
-        <rect x="140" y="336" width="46" height="20" rx="10" fill="#062A22" stroke="rgba(242,245,240,.5)"/>
-        <text x="163" y="350" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#F2F5F0">2 km</text>
+        <rect x="198" y="167" width="46" height="20" rx="10" fill="#D4A24C"/>
+        <text x="221" y="181" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" fill="#1F2A2E">1 km</text>
+        <rect x="140" y="336" width="46" height="20" rx="10" fill="#161E21" stroke="rgba(244,241,234,.5)"/>
+        <text x="163" y="350" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#F4F1EA">2 km</text>
         <!-- Exedy, Bando -->
-        <g fill="#F2F5F0"><rect x="338" y="211" width="11" height="11" rx="2"/><rect x="340" y="225" width="11" height="11" rx="2"/></g>
-        <text x="358" y="221" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F2F5F0">Exedy · Bando</text>
-        <text x="358" y="234" font-family="JetBrains Mono, monospace" font-size="10" fill="#F2B824">0.6 km</text>
+        <g fill="#F4F1EA"><rect x="338" y="211" width="11" height="11" rx="2"/><rect x="340" y="225" width="11" height="11" rx="2"/></g>
+        <text x="358" y="221" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F4F1EA">Exedy · Bando</text>
+        <text x="358" y="234" font-family="JetBrains Mono, monospace" font-size="10" fill="#D4A24C">0.6 km</text>
         <!-- Tata Electronics -->
-        <path d="M280 235 L360 259" stroke="#F2B824" stroke-width="1.5" stroke-dasharray="4 5"/>
-        <g transform="translate(360 244)"><rect width="38" height="30" rx="4" fill="#F2F5F0"/><path d="M5 24V13l7 4v-4l7 4v-4l7 4V8h7v16z" fill="#083C30"/></g>
-        <text x="405" y="256" font-family="Instrument Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#F2F5F0">Tata Electronics</text>
-        <text x="405" y="271" font-family="JetBrains Mono, monospace" font-size="10" fill="#F2B824">iPhone plant · 1.2 km</text>
+        <path d="M280 235 L360 259" stroke="#D4A24C" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <g transform="translate(360 244)"><rect width="38" height="30" rx="4" fill="#F4F1EA"/><path d="M5 24V13l7 4v-4l7 4v-4l7 4V8h7v16z" fill="#1F2A2E"/></g>
+        <text x="405" y="256" font-family="Instrument Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#F4F1EA">Tata Electronics</text>
+        <text x="405" y="271" font-family="JetBrains Mono, monospace" font-size="10" fill="#D4A24C">iPhone plant · 1.2 km</text>
         <!-- Scania, Aisin, Mahindra -->
-        <g fill="#F2F5F0"><rect x="318" y="326" width="10" height="10" rx="2"/><rect x="322" y="343" width="10" height="10" rx="2"/><rect x="281" y="342" width="10" height="10" rx="2"/></g>
-        <text x="340" y="336" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F2F5F0">Scania · Aisin</text>
-        <text x="340" y="350" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F2F5F0">Mahindra Aerospace</text>
-        <text x="340" y="363" font-family="JetBrains Mono, monospace" font-size="10" fill="#F2B824">1.3 to 1.5 km</text>
+        <g fill="#F4F1EA"><rect x="318" y="326" width="10" height="10" rx="2"/><rect x="322" y="343" width="10" height="10" rx="2"/><rect x="281" y="342" width="10" height="10" rx="2"/></g>
+        <text x="340" y="336" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F4F1EA">Scania · Aisin</text>
+        <text x="340" y="350" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F4F1EA">Mahindra Aerospace</text>
+        <text x="340" y="363" font-family="JetBrains Mono, monospace" font-size="10" fill="#D4A24C">1.3 to 1.5 km</text>
         <!-- Honda -->
-        <rect x="228" y="424" width="12" height="12" rx="2" fill="#F2F5F0"/>
-        <text x="220" y="430" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F2F5F0">Honda</text>
-        <text x="220" y="443" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#F2B824">2.5 km</text>
+        <rect x="228" y="424" width="12" height="12" rx="2" fill="#F4F1EA"/>
+        <text x="220" y="430" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F4F1EA">Honda</text>
+        <text x="220" y="443" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#D4A24C">2.5 km</text>
         <!-- Lumax, north of the highway -->
-        <rect x="297" y="78" width="10" height="10" rx="2" fill="#F2F5F0"/>
-        <text x="312" y="87" font-family="Instrument Sans, Arial, sans-serif" font-size="12" fill="rgba(242,245,240,.85)">Lumax</text>
+        <rect x="297" y="78" width="10" height="10" rx="2" fill="#F4F1EA"/>
+        <text x="312" y="87" font-family="Instrument Sans, Arial, sans-serif" font-size="12" fill="rgba(244,241,234,.85)">Lumax</text>
+        <!-- more plants, plotted from their map coordinates -->
+        <g fill="rgba(244,241,234,.78)"><rect x="295" y="246" width="8" height="8" rx="1.5"/><rect x="279" y="282" width="8" height="8" rx="1.5"/><rect x="276" y="297" width="8" height="8" rx="1.5"/><rect x="285" y="305" width="8" height="8" rx="1.5"/><rect x="269" y="316" width="8" height="8" rx="1.5"/><rect x="335" y="309" width="8" height="8" rx="1.5"/><rect x="300" y="357" width="8" height="8" rx="1.5"/><rect x="301" y="369" width="8" height="8" rx="1.5"/><rect x="166" y="437" width="8" height="8" rx="1.5"/></g>
+        <path d="M294 298 L343 291" stroke="rgba(244,241,234,.35)" stroke-width="1"/>
+        <text x="293" y="265" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Suprajit</text><text x="347" y="290" text-anchor="start" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Varroc · Advik</text><text x="347" y="303" text-anchor="start" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Belrise · Klassic Wheels</text><text x="349" y="318" text-anchor="start" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Jay Ushin</text><text x="315" y="384" text-anchor="start" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Indo Autotech · ASK</text><text x="161" y="445" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="11" fill="rgba(244,241,234,.82)">Bastian</text>
         <!-- village -->
-        <circle cx="225" cy="285" r="3" fill="rgba(242,245,240,.6)"/>
-        <text x="218" y="289" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="11" font-style="italic" fill="rgba(242,245,240,.7)">Karadabande Hosahalli</text>
+        <circle cx="225" cy="285" r="3" fill="rgba(244,241,234,.6)"/>
+        <text x="218" y="289" text-anchor="end" font-family="Instrument Sans, Arial, sans-serif" font-size="11" font-style="italic" fill="rgba(244,241,234,.7)">Karadabande Hosahalli</text>
         <!-- site -->
-        <path d="M262 226 L276 220 L281 229 L302 227 L303 240 L283 243 L281 235 L266 240 Z" fill="#F2B824" stroke="#14221F" stroke-width="1.2"/>
-        <path d="M262 232 L196 224" stroke="#F2B824" stroke-width="1"/>
-        <rect x="76" y="202" width="120" height="42" rx="8" fill="#062A22" stroke="#F2B824"/>
-        <text x="136" y="220" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-size="15" font-weight="700" fill="#F2B824">The Ridge</text>
-        <text x="136" y="236" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#F2F5F0">20 acres · 300 plots</text>
-        <text x="540" y="28" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(242,245,240,.7)">N ↑</text>
-        <text x="540" y="454" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10.5" fill="rgba(242,245,240,.55)">NARASAPURA INDUSTRIAL AREA</text>
+        <path d="M262 226 L276 220 L281 229 L302 227 L303 240 L283 243 L281 235 L266 240 Z" fill="#D4A24C" stroke="#1F2A2E" stroke-width="1.2"/>
+        <path d="M262 232 L196 224" stroke="#D4A24C" stroke-width="1"/>
+        <rect x="76" y="202" width="120" height="42" rx="8" fill="#161E21" stroke="#D4A24C"/>
+        <text x="136" y="220" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4A24C">The Ridge</text>
+        <text x="136" y="236" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#F4F1EA">20 acres · 300 plots</text>
+        <text x="540" y="28" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(244,241,234,.7)">N ↑</text>
+        <text x="540" y="454" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10.5" fill="rgba(244,241,234,.55)">NARASAPURA INDUSTRIAL AREA</text>
       </svg>
       <figcaption>Drawn from map coordinates. Distances are straight-line.</figcaption>
     </figure>
@@ -801,6 +806,23 @@ const press=(btns,on)=>btns.forEach(b=>b.setAttribute('aria-pressed',b===on?'tru
     if(r) e.setAttribute('aria-hidden','true');
     const b=document.createElement('b'); b.textContent=n; const s=document.createElement('span'); s.textContent=d; e.append(b,s); t.appendChild(e);
   });
+})();
+
+/* ---------- top menu: shrink on scroll, progress bar, active section ---------- */
+(function(){
+  const nav=document.querySelector('.nav'), prog=$('nav-prog');
+  const links=[...nav.querySelectorAll('ul a')], secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  let tick=false;
+  function upd(){
+    tick=false;
+    const y=window.scrollY||document.documentElement.scrollTop, max=document.documentElement.scrollHeight-innerHeight;
+    nav.classList.toggle('scrolled',y>24);
+    prog.style.transform='scaleX('+(max>0?Math.min(1,y/max):0)+')';
+    let cur=-1; secs.forEach((el,i)=>{ if(el&&el.getBoundingClientRect().top<=nav.offsetHeight+90) cur=i });
+    links.forEach((a,i)=>{ a.classList.toggle('active',i===cur); if(i===cur) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current') });
+  }
+  addEventListener('scroll',()=>{ if(!tick){tick=true;requestAnimationFrame(upd)} },{passive:true});
+  addEventListener('resize',upd); upd();
 })();
 
 /* ---------- count-up ---------- */
