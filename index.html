@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#1F2A2E">
 <link rel="icon" type="image/svg+xml" href="brand-ridge-icon.svg">
 <style>html{color-scheme:light} body{margin:0;font:14px system-ui,sans-serif} img{max-width:100%} [hidden]{display:none!important}
-.gmap{margin-top:16px;border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:16/10;background:var(--surface)} .gmap iframe{width:100%;height:100%;border:0;display:block}</style>
+.gmap{border:1px solid var(--line);border-radius:14px;overflow:hidden;flex:1 1 320px;min-height:320px;background:var(--surface)} .gmap iframe{width:100%;height:100%;border:0;display:block}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
@@ -229,7 +229,8 @@ input[type=range]{width:100%;accent-color:var(--brand-2);height:28px}
 @media (prefers-reduced-motion: reduce){ .ticker{-webkit-mask-image:none;mask-image:none} .track{width:auto;flex-wrap:wrap} .track .dup{display:none} }
 
 /* location */
-.loc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.loc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.loc-map{display:flex;flex-direction:column;gap:14px;min-width:0} .loc-map .pin{margin-top:0}
 .dist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .dist div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;gap:0;align-content:start}
 .dist b{font-family:var(--f-display);font-size:30px;font-weight:700;color:var(--accent-text)}
@@ -573,16 +574,18 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
           <div><b>31 km</b><span>Bengaluru airport (KIA)</span></div>
         </div>
         <p class="note" style="margin-top:10px">Straight-line distances measured from the site pin. Road distances are longer.</p>
+        <div class="roads" style="margin-top:18px">
+          <article><span class="shield">NH 75</span><div><h3>Ten-lane widening planned</h3><p>NHAI plans a 10-lane corridor from Hoskote towards the Andhra border, easing truck and commuter access to Narasapura.</p></div></article>
+          <article><span class="shield">NE 7</span><div><h3>Bengaluru–Chennai Expressway</h3><p>The Karnataka section opened in December 2024. The full corridor to Chennai is due by 2027.</p></div></article>
+          <article><span class="shield">STRR</span><div><h3>Satellite Town Ring Road</h3><p>Meets NH-75 and the expressway, tying the whole industrial belt into one network.</p></div></article>
+        </div>
+      </div>
+      <div class="loc-map">
         <div class="gmap"><iframe title="The Ridge site on Google Maps" src="https://www.google.com/maps?q=13.118307,77.983071&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
         <div class="pin">
           <div><span class="mono">SITE PIN</span><b class="mono" style="font-family:var(--f-mono)">13.1183° N, 77.9831° E</b></div>
           <a class="btn btn-y" href="https://maps.app.goo.gl/vBUmg7nvytPNgkfFA" target="_blank" rel="noopener">Open in Google Maps ↗</a>
         </div>
-      </div>
-      <div class="roads">
-        <article><span class="shield">NH 75</span><div><h3>Ten-lane widening planned</h3><p>NHAI plans a 10-lane corridor from Hoskote towards the Andhra border, easing truck and commuter access to Narasapura.</p></div></article>
-        <article><span class="shield">NE 7</span><div><h3>Bengaluru–Chennai Expressway</h3><p>The Karnataka section opened in December 2024. The full corridor to Chennai is due by 2027.</p></div></article>
-        <article><span class="shield">STRR</span><div><h3>Satellite Town Ring Road</h3><p>Meets NH-75 and the expressway, tying the whole industrial belt into one network.</p></div></article>
       </div>
     </div>
     <div class="near" id="nearby">
