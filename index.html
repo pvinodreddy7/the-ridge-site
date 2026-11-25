@@ -356,6 +356,7 @@ fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
 
 footer{background:var(--hero);color:var(--hero-muted);font-size:13px;padding-block:40px calc(96px + env(safe-area-inset-bottom,0px))}
 footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{max-width:900px}
+footer .flinks{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center} footer .flinks a{color:var(--hero-ink);text-decoration:underline;text-underline-offset:3px;padding-block:6px}
 
 .side{position:fixed;right:env(safe-area-inset-right,0px);top:42%;z-index:25;writing-mode:vertical-rl;background:var(--yellow);color:#1F2A2E;font-weight:700;font-size:14px;padding:16px 9px;border-radius:10px 0 0 10px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.2)}
 .float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;display:grid;gap:10px}
@@ -724,6 +725,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
         <div class="field full"><label for="msg">Anything else? (optional)</label><textarea id="msg"></textarea></div>
         <p class="err full" id="err" hidden></p>
         <div class="field full"><button class="btn btn-g" type="submit">Send enquiry</button></div>
+        <p class="note full" style="grid-column:1/-1;margin:0">By sending this enquiry you agree to our <a href="privacy.html">Privacy policy</a> and <a href="terms.html">Terms and conditions</a>.</p>
         <div class="done full" id="done" hidden>
           <p><b>One more tap.</b> Open WhatsApp to send your enquiry to our team.</p>
           <a class="btn btn-g" id="wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
@@ -739,7 +741,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
   <div class="wrap">
     <img src="brand-navilu-cream.svg" alt="Navilu Realty" width="107" height="30">
     <p>DTCP layout approval and RERA registration are in process; plots will be offered for sale only after RERA registration. All specifics of the plan, including plot numbers, sizes, roads, parks and amenities, are subject to change in the final approval. Prices and returns shown are indicative and may change. Investment and rental figures are illustrative and are not promised returns.</p>
-    <p>© 2026 Navilu Realty · Bengaluru</p>
+    <p class="flinks">© 2026 Navilu Realty · Bengaluru <a href="terms.html">Terms and conditions</a> <a href="privacy.html">Privacy policy</a></p>
   </div>
 </footer>
 
