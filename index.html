@@ -82,7 +82,16 @@ button,input,select,textarea{font:inherit}
 
 /* hero */
 .hero{background:radial-gradient(120% 90% at 85% 10%,var(--hero-2),var(--hero) 60%);color:var(--hero-ink);padding-block:clamp(36px,5vw,64px) clamp(48px,6vw,80px);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start} .hero .mapcard{margin-top:clamp(0px,3vw,44px)!important}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.herocol{display:grid;gap:16px;justify-items:center;min-width:0} .herocol .mapcard{width:100%} .herocol .stones{margin-top:0;justify-content:center}
+@media (min-width:901px){
+  .hero{padding-block:clamp(16px,3.2vh,56px);min-height:calc(100svh - 76px);display:grid;align-items:center}
+  .hero h1{font-size:clamp(38px,min(6.2vw,8.8vh),92px);margin-top:clamp(8px,1.8vh,18px)}
+  .hero .lede{margin-top:clamp(10px,2.2vh,22px);font-size:clamp(15px,min(1.7vw,2.5vh),20px)}
+  .hero .pricebar{margin-top:clamp(12px,2.8vh,30px)} .hero .pricebar div{padding:clamp(10px,1.8vh,16px) 18px} .hero .pricebar b{font-size:clamp(22px,3.6vh,30px)} .herocol{gap:clamp(8px,1.6vh,16px)} .hero .ctas{margin-top:clamp(12px,2.6vh,26px)}
+  .herocol .mapcard svg{width:auto;max-width:100%;height:auto;max-height:calc(100svh - 76px - 2*clamp(16px,3.2vh,56px) - 192px);margin-inline:auto;aspect-ratio:560/470}
+  .herocol .mapcard figcaption{text-align:center}
+}
 .hero .eyebrow{color:var(--yellow)}
 .hero h1{font-size:clamp(44px,6.6vw,92px);font-weight:800;margin-top:18px;line-height:.98}
 .hero h1 em{font-style:normal;color:var(--yellow)}
@@ -109,6 +118,18 @@ button,input,select,textarea{font:inherit}
 .traffic{animation:traffic 2.4s linear infinite}
 @keyframes traffic{to{stroke-dashoffset:-56}}
 @media (max-width:900px){ .hero .wrap{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:560px){
+  .hero{padding-block:22px 34px} .hero h1{font-size:clamp(34px,10.4vw,44px);margin-top:12px} .hero .lede{font-size:15.5px;margin-top:14px}
+  .pricebar{margin-top:20px} .pricebar div{padding:12px 12px} .pricebar small{font-size:11px;line-height:1.3} .pricebar b{font-size:23px;white-space:nowrap}
+  .hero .ctas{margin-top:16px;gap:8px;flex-wrap:nowrap} .hero .ctas .btn{flex:1 1 0;min-width:0;padding-inline:8px;font-size:14px;white-space:nowrap}
+  .herocol{gap:12px} .herocol .mapcard{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;scrollbar-width:none} .herocol .mapcard::-webkit-scrollbar{display:none}
+  .herocol .mapcard svg{width:600px;max-width:none}
+  .herocol .mapcard figcaption{position:sticky;left:0;width:calc(100vw - 2*max(16px,env(safe-area-inset-left,0px)));text-align:center}
+  .herocol .stones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:100%}
+  .stone{width:auto;border-radius:18px 18px 6px 6px} .stone .top{font-size:10.5px;letter-spacing:0;padding:8px 2px 6px} .stone .body{padding:7px 3px 9px} .stone b{font-size:21px} .stone span{font-size:10.5px}
+  .sec .head h2{text-wrap:balance}
+}
+.only-m{display:none} @media (max-width:560px){ .only-m{display:inline} .only-d{display:none} }
 
 /* stats */
 .stats{background:var(--surface);border-bottom:1px solid var(--line)}
@@ -365,11 +386,6 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
       <p class="eyebrow">The Ridge by Navilu · Narasapura, Kolar</p>
       <h1>Plots minutes from India's <em>iPhone plant.</em></h1>
       <p class="lede"><b>A once-in-a-decade opportunity.</b> A land investment with high capital appreciation and rental income potential, in a gated 20-acre layout inside the Narasapura industrial belt.</p>
-      <div class="stones" aria-label="Straight-line distances from the site">
-        <div class="stone"><div class="top">TATA · iPHONE</div><div class="body"><b>1.2 km</b><span>Electronics plant</span></div></div>
-        <div class="stone"><div class="top">HONDA</div><div class="body"><b>2.5 km</b><span>Two-wheeler plant</span></div></div>
-        <div class="stone"><div class="top">NH 75</div><div class="body"><b>1.6 km</b><span>National Highway</span></div></div>
-      </div>
       <div class="pricebar">
         <div><small>Planned RERA launch price</small><b>₹4,500 <span style="font-size:.5em;font-weight:500">/ sq ft</span></b></div>
         <div><small>Pre-launch entry · 11 of 25 slots left</small><b>₹2,999 <span style="font-size:.5em;font-weight:500">/ sq ft</span></b></div>
@@ -379,6 +395,7 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
         <a class="btn btn-o" href="#plan">See the master plan</a>
       </div>
     </div>
+    <div class="herocol">
     <figure class="mapcard" style="margin:0">
       <svg viewBox="0 0 560 470" role="img" aria-label="Map drawn from real coordinates. The site sits at the centre. Narasapura Industrial Road runs 600 metres to the east. The Tata Electronics iPhone plant is 1.2 kilometres to the east-south-east. National Highway 75 runs east to west about 1.6 kilometres to the north. Scania, Aisin and Mahindra Aerospace are 1.3 to 1.5 kilometres south, and Honda is 2.5 kilometres south.">
         <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(244,241,234,.06)" stroke-width="1"/></pattern></defs>
@@ -440,8 +457,14 @@ footer .wrap{display:grid;gap:14px} footer img{height:30px;width:auto} footer p{
         <text x="540" y="28" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(244,241,234,.7)">N ↑</text>
         <text x="540" y="454" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10.5" fill="rgba(244,241,234,.55)">NARASAPURA INDUSTRIAL AREA</text>
       </svg>
-      <figcaption>Drawn from map coordinates. Distances are straight-line.</figcaption>
+      <figcaption><span class="only-m">Swipe the map sideways. </span><span class="only-d">Drawn from map coordinates. </span>Distances are straight-line.</figcaption>
     </figure>
+      <div class="stones" aria-label="Straight-line distances from the site">
+        <div class="stone"><div class="top">TATA · iPHONE</div><div class="body"><b>1.2 km</b><span>Electronics plant</span></div></div>
+        <div class="stone"><div class="top">HONDA</div><div class="body"><b>2.5 km</b><span>Two-wheeler plant</span></div></div>
+        <div class="stone"><div class="top">NH 75</div><div class="body"><b>1.6 km</b><span>National Highway</span></div></div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -806,6 +829,9 @@ const press=(btns,on)=>btns.forEach(b=>b.setAttribute('aria-pressed',b===on?'tru
     const b=document.createElement('b'); b.textContent=n; const s=document.createElement('span'); s.textContent=d; e.append(b,s); t.appendChild(e);
   });
 })();
+
+/* ---------- hero map: on phones it is wider than the screen, so start it centred on the site ---------- */
+(function(){ const m=document.querySelector('.herocol .mapcard'); if(m&&m.scrollWidth>m.clientWidth) m.scrollLeft=(m.scrollWidth-m.clientWidth)*0.42; })();
 
 /* ---------- top menu: shrink on scroll, progress bar, active section ---------- */
 (function(){
